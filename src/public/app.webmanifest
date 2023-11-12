@@ -1,0 +1,42 @@
+{
+    "id": "restaurant-catalogue-pwa-1",
+    "start_url": "./index.html",
+    "name": "Urban Kitchen Restaurant Catalogue",
+    "short_name": "Urban Kitchen",
+    "description": "Find your favorite Indonesian restaurant",
+    "display": "standalone",
+    "background_color": "#FFFFFF",
+    "theme_color": "#2C79C6",
+    "icons": [
+      {
+        "src": "/icons/apple-touch-icon-180x180.png",
+        "sizes": "180x180",
+        "type": "image/png",
+        "purpose": "any"
+      },
+      {
+        "src": "/icons/favicon-16x16.png",
+        "sizes": "16x16",
+        "type": "image/png",
+        "purpose": "any"
+      },
+      {
+        "src": "/icons/favicon-32x32.png",
+        "sizes": "32x32",
+        "type": "image/png",
+        "purpose": "any"
+      },
+      {
+        "src": "/icons/favicon-192x192.png",
+        "sizes": "192x192",
+        "type": "image/png",
+        "purpose": "any"
+      },
+      {
+        "src": "/icons/favicon-512x512.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "any"
+      }
+    ]
+  }

@@ -1,0 +1,181 @@
+/* Gaya utama untuk tampilan mobile */
+.resto-detail {
+    padding: 5px;
+}
+
+.resto-detail__name {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #1d5d9b;
+}
+
+.resto-detail__image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.resto-detail__info-row {
+    margin-top: 10px;
+    background-color: #bfd6f7;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+.resto-detail__info-label {
+    font-weight: bold;
+    width: 45%;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+}
+
+.resto-detail__info-value {
+    margin-top: 5px;
+    text-align: left;
+}
+
+.resto-detail__description {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.resto-detail__menu-value {
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: left;
+}
+
+.resto-detail__menu li {
+    margin-bottom: 5px;
+}
+
+.resto-detail__reviews {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    margin-top: 15px;
+}
+
+.resto-detail__reviewer {
+    font-weight: bold;
+    color: #19548f;
+    margin-bottom: 5px;
+}
+
+.resto-detail__review-date {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 17px;
+}
+
+.like {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #db0000;
+
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    border-radius: 50%;
+    border: 0;
+
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.resto-detail__customer-review {
+    padding: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+.customer-review__info-label {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group-label {
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    height: 43px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    width: 100%;
+    height: 80px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 14px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+/* Media query untuk tablet */
+@media screen and (min-width: 650px) {
+    .resto-detail__name {
+        font-size: 28px;
+    }
+
+    .resto-detail__image {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+
+}
+
+/* Media query untuk desktop */
+@media screen and (min-width: 800px) {
+    .resto-detail {
+        padding-left: 100px;
+        padding-right: 100px;
+        text-align: center;
+    }
+
+    .resto-detail__name {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    .resto-detail__image {
+        max-width: 70%;
+    }
+}

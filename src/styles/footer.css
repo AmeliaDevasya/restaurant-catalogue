@@ -1,0 +1,124 @@
+/* Tampilan Utama Mobile */
+footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #1d5d9b;
+    height: auto;
+    width: 100%;
+    font-family: "Open Sans";
+    padding-top: 10px;
+    color: #fff;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: -25px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-content p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials li {
+    margin: 0 2px;
+}
+
+.socials a {
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    min-width: 44px;
+    min-height: 44px;
+}
+
+.socials a i {
+    font-size: 1.2rem;
+    transition: color .4s ease;
+}
+
+.socials a:hover i {
+    color: #19A7CE;
+}
+
+.footer-bottom {
+    background: #15416d;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-bottom p {
+    font-size: 12px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer-bottom span {
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+
+/* Media query untuk tampilan Tablet */
+@media screen and (min-width: 650px) {
+    .footer-content {
+        margin-top: 12px;
+        margin-bottom: -15px;
+    }
+
+    .footer-bottom {
+        padding: 15px 0;
+    }
+
+    .socials li {
+        margin: 0 12px;
+    }
+
+    .footer-bottom p {
+        font-size: 13px;
+    }
+}
+
+/* Media query untuk tampilan Desktop */
+@media screen and (min-width: 800px) {
+    footer {
+        padding-top: 40px;
+    }
+
+    .footer-content {
+        margin: 0;
+    }
+
+    .footer-bottom {
+        padding: 20px 0;
+    }
+
+    .footer-bottom p {
+        font-size: 14px;
+    }
+
+    .socials li {
+        margin: 0 10px;
+    }
+
+}

@@ -1,0 +1,154 @@
+/* Tampilan Utama Mobile */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1d5d9b;
+    padding: 10px 5px 10px 25px;
+    color: white;
+    z-index: 1000;
+}
+
+header p {
+    font-family: 'Chillax', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+
+#hamburger {
+    font-size: 27px;
+    color: white;
+    cursor: pointer;
+    min-width: 44px;
+    min-height: 44px;
+}
+
+nav#drawer-mobile-menu {
+    display: none;
+}
+
+
+nav#drawer-mobile-menu.open {
+    display: block;
+    background-color: #2c79c6;
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    top: 64px;
+    right: 0;
+    width: 180px;
+    height: 200px;
+    padding: 10px;
+    z-index: 1000;
+    transition: left 0.3s ease;
+}
+
+nav#drawer-mobile-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav#drawer-mobile-menu li {
+    padding: 15px;
+}
+
+nav#drawer-mobile-menu a {
+    text-decoration: none;
+
+    color: white;
+    display: block;
+    min-width: 44px;
+    min-height: 44px;
+}
+
+nav#drawer-mobile-menu a:hover {
+    color: #ffb835;
+    font-weight: bolder;
+}
+
+.skip-link {
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    top: -40px;
+    left: 215px;
+    background-color: #e89d13;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: 10002;
+}
+
+.skip-link:focus {
+    top: 17px;
+    opacity: 1;
+}
+
+/* Media query untuk tampilan Tablet */
+@media screen and (min-width: 650px) {
+    #hamburger {
+        display: none;
+    }
+
+    header {
+        padding: 5px 25px 5px 30px;
+        height: 65px;
+    }
+
+    nav#drawer-mobile-menu {
+        display: flex;
+        background-color: transparent;
+        position: static;
+        width: auto;
+        height: auto;
+        padding: 0;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    nav#drawer-mobile-menu ul {
+        text-align: right;
+        display: flex;
+    }
+
+    nav#drawer-mobile-menu li {
+        margin-bottom: 0;
+    }
+
+    nav#drawer-mobile-menu a {
+        margin-top: 20px;
+    }
+
+    .skip-link {
+        left: 220px;
+    }
+
+    .skip-link:focus {
+        top: 20px;
+    }
+}
+
+
+/* Media query untuk tampilan Desktop */
+@media screen and (min-width: 800px) {
+    header {
+        padding: 1px 55px 1px 60px;
+        height: 75px;
+    }
+
+    .skip-link {
+        left: 250px;
+    }
+
+    .skip-link:focus {
+        top: 22px;
+    }
+}

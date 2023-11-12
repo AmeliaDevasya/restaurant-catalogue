@@ -1,0 +1,164 @@
+/* Tampilan Utama Mobile */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@1,600&family=Poppins:wght@300;400&display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=chillax@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+#maincontent {
+  padding: 20px;
+  height: auto;
+}
+
+.resto-post {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.resto-post-item {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.resto-post-item-content {
+  padding: 10px 20px 30px 20px;
+}
+
+.resto-post-item-content h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 31px;
+}
+
+.resto-post-item-content h2 a {
+  text-decoration: none;
+  color: #1d5d9b;
+}
+
+.resto-post-item-content p {
+  text-align: left;
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 1.5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+.resto-post-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px 8px 0 0;
+  margin: 0;
+  background-color: #e0e0e0;
+}
+
+.restaurant-label {
+  text-align: center;
+  margin: 20px 0;
+  font-family: 'Poppins', sans-serif;
+  color: #1d5d9b;
+}
+
+.maps-wrapper {
+  display: flex;
+  align-items: baseline;
+}
+
+.maps-wrapper p {
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+}
+
+.rate-wrapper {
+  display: flex;
+  align-items: baseline;
+}
+
+.rate-wrapper p {
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+}
+
+i.fa-star {
+  font-size: 1em;
+}
+
+.resto-item__not__found{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  color: rgb(181, 179, 179);
+}
+
+/* Media query untuk tampilan Tablet */
+@media screen and (min-width: 650px) {
+  .resto-post {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .resto-post-item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .resto-post-item img {
+    height: 175px;
+    width: 100%;
+  }
+
+  #maincontent {
+    padding: 30px;
+  }
+
+  .resto-item__not__found{
+    grid-column: span 2;
+  }
+}
+
+/* Media query untuk tampilan Desktop */
+@media screen and (min-width: 900px) {
+  .resto-post {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+
+  .resto-post-item {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .resto-post-item img {
+    height: 250px;
+    width: 100%;
+  }
+
+  #maincontent {
+    padding: 60px;
+  }
+
+  .resto-item__not__found{
+    grid-column: span 3;
+  }
+}
